@@ -1,0 +1,11 @@
+{
+	"ImportPath": "good-counter-go",
+	"GoVersion": "go1.1.2",
+	"Deps": [
+		{
+			"ImportPath": "labix.org/v2/mgo",
+			"Comment": "263",
+			"Rev": "gustavo@niemeyer.net-20140126000127-qe9fwt48ceby11ts"
+		}
+	]
+}
