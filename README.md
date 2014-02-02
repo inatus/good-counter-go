@@ -2,7 +2,6 @@ good-counter-go
 ===============
 
 Simple Ajax 'Good!' counter web app implemented with Golang and MongoDB.
-Account book web application for home revenue and expense
 
 ---
 
@@ -15,7 +14,7 @@ Account book web application for home revenue and expense
 ## Prerequisite
 
 - Register an account to Heroku
-- Install Heroku toolbelt
+- Install Heroku Toolbelt
 - Set $GOPATH environment variable
 
 ## Create a Go source folder
@@ -30,7 +29,7 @@ $ git init
 
 ## Create a Heroku project
 
-Login Heroku Toolbelt and create a new project.
+Login to Heroku Toolbelt and create a new project.
 
 ```bash
 $ heroku login
@@ -67,7 +66,7 @@ Use `heroku addons:docs mongohq` to view documentation.
 
 ## Create a Go web application
 
-Create a Go web application connected to MongoDB. The following is the points.
+Create a Go web application connected to MongoDB. Consider the following points.
 
 ### Designate environment variable PORT as the port of the http server.
 
@@ -83,9 +82,9 @@ Environment variable MONGOHQ_URL also includes the user name and the password.
 sess, err := mgo.Dial(os.Getenv("MONGOHQ_URL"))
 ```
 
-### Designate the database name from the web MongoHQ manager
+### Designate the database name from MongoHQ Web Manager
 
-Enter the MongoDB manager from the web Heroku Apps manager Heroku and confirm the database name. Set the name as the database that Go connects to.
+Enter MongoDB Manager from Heroku Apps Web Manager and confirm the database name. Set the name as the database that Go connects to.
 
 ![Heroku Apps Manager](http://blog.inagaki.in/wp-content/uploads/2014/02/heroku-app-menu.png)
 
@@ -123,7 +122,7 @@ $ git add -A .
 $ git commit -m 'Add source'
 ```
 
-Create a setting file for Heroku, download the library, and commit them to the repository.
+Create a setting file for Heroku, download the libraries, and commit them to the repository.
 
 ```bash
 $ echo 'web: good-counter-go' > Procfile
@@ -157,7 +156,7 @@ $ heroku open
 
 ## In case to push the resources to Github as well
 
-Create a new repository in Github (do not enable auto init), execute the following commands.
+Create a new repository in Github (do not enable auto init) and execute the following commands.
 
 ```bash
 $ git remote add origin https://github.com/inatus/good-counter-go.git
