@@ -22,8 +22,8 @@ Simple Ajax 'Good!' counter web app implemented with Golang and MongoDB.
 Create a Go source folder to $GOPATH/src.
 
 ```bash
-$ mkdir $GOPATH/src/demoapp
-$ cd $GOPATH/src/demoapp
+$ mkdir $GOPATH/src/good-counter-go
+$ cd $GOPATH/src/good-counter-go
 $ git init
 ```
 
@@ -50,7 +50,7 @@ As the project is create with a random name, change the name to any.
 ```bash
 $ heroku apps:rename good-counter-go
 Renaming vast-brook-7638 to good-counter-go... done
-http://good-count-go.herokuapp.com/ | git@heroku.com:good-count-go.git
+http://good-counter-go.herokuapp.com/ | git@heroku.com:good-counter-go.git
 Git remote heroku updated
 ```
 
